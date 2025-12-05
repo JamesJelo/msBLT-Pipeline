@@ -5,7 +5,6 @@ msBLT is a fully in-silico pipeline that designs CRISPR-Cas9 guides hitting ≥ 
 
 ## Quick start
 ```bash
-git clone https://github.com/Jamesjelo/msBLT-Pipeline.git
-cd isCCGs-β-lactamase-guides
-docker build -t msblt .
-docker run --rm -v $(pwd)/data:/app/data msblt
+conda env create -f environment.yml
+conda activate isCCGs
+python -m src.. 01_pangenome_fetch 
